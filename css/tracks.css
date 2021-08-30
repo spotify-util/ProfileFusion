@@ -1,0 +1,33 @@
+.tracks-block {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+@media(max-width:540px){
+  .tracks-block {
+     grid-template-columns: repeat(1, 1fr);
+  }
+}
+.track-wrapper {
+    margin: 15px;
+}
+.track {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    padding: 0 40px;
+    border: 2px solid white;
+    min-height: 93px;
+}
+.track img {
+    width: 75px;
+    position: absolute;
+    left: 10px;
+    top: 9px;
+}
+.track p {
+    font-size: 18px;
+    position: relative;
+    left: 37px;
+}
